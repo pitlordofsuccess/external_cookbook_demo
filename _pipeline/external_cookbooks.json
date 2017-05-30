@@ -5,7 +5,10 @@
   },
   "supermarket": [
     "_build",
+    "chef_client_updater",
+    "compat_resource",
     "delivery-sugar",
+    "delivery-truck",
     "tar"
   ]
 }
