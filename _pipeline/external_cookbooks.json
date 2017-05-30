@@ -1,0 +1,11 @@
+{
+  "git": {
+  },
+  "github": {
+  },
+  "supermarket": [
+    "_build",
+    "delivery-sugar",
+    "tar"
+  ]
+}

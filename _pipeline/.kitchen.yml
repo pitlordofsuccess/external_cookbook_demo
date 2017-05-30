@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+  synced_folders:
+    - [<%= File.join(ENV['PWD'], '..', '..')%>, '/tmp/repo-data']
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-16.04
+  - name: centos-7.2
+
+suites:
+  - name: default
+    run_list:
+      - recipe[delivery_build::default]
+      - recipe[test]
+    attributes:
